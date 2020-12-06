@@ -1,0 +1,5 @@
+# ignore all preview photos
+images/previews
+
+#ignore credentials
+credentials.txt

@@ -1,0 +1,434 @@
+html{
+    position: relative;
+    font-family: helvetica;
+}
+body{
+    background-color: #E0E6E6;
+    margin: 0;
+}
+.container{
+    margin: 0 0%;
+}
+#navbar{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    background-color: #1B1B1B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 60px;
+    height: 10vh;
+}
+.nav_logo{
+    height: auto;
+    position: relative;
+}
+.navbar_menu{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: white;
+    text-align: center;
+}
+
+.navbar_item{
+    display: inline;
+    color: white;
+    margin: 0 5px;
+    font-size: large;
+}
+
+.navbar_logo{
+    height: 10vh;
+}
+.navbar_link:visited,
+.navbar_link{
+    text-decoration: none;
+    color: #E0E6E6;
+}
+    .navbar_link:hover{
+        color: white;
+    }
+.bar{
+    display: inline;
+}
+.burger{
+    cursor: pointer;
+    display: none;
+    margin-right: 20px;
+}
+    .burger div{
+        width: 25px;
+        height: 3px;
+        background-color: #E0E6E6;
+        margin: 5px
+    }
+.banner{
+    margin: 10vh 20% 0 20%;
+    height: 300px;
+}
+    .banner_img{
+        height: 300px;
+        width: 100%;
+    }
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+}
+    .footer_txt{
+        margin: 0;
+        position: absolute;
+        font-size: x-small;
+        color: black;
+        top: 50%;
+        right: 20px;
+    }
+    .footer a,
+    .footer a:visited{
+        text-decoration: none;
+        color: black;
+    }
+.content{
+    padding-bottom: 15px;
+    margin: 0 20% 5vh 20%;
+    background-color: #E0E6E6;
+}
+    .content--about{
+        margin-top: 10vh;
+        height: 85vh;
+        padding-bottom: 0;
+    }
+    .content--services{
+        padding-bottom: 0;
+        margin-top: 10vh;
+    }
+    .content--contact{
+        margin-top: 10vh;
+        height: 85vh;
+        padding-bottom: 0;
+    }
+    .content--career{
+        margin-top: 10vh;
+        height: 85vh;
+        padding-bottom: 0;
+    }
+    .content_header{
+        background-color: #E0E6E6;
+        height: 50px;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+            .content_header h1{
+                padding: 12px 0;
+                margin: 0;
+                font-size: 2rem;
+                font-weight: 400;
+            }
+.content_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "content_img content_txt";
+    position: relative;
+    font-size: small;
+    column-gap: 10px;
+}
+    .content_info_img{
+        grid-area: content_img;
+        width: 100%;
+        max-height: 300px;
+    }
+    .content_info_text{
+        margin: 10px 0 0 5px;
+    }
+            .content_info_text p{
+                margin: 0 10px 5px 0;
+            }
+    .content_info_txt{
+        letter-spacing: 0.05rem;
+        margin: 10px 0;
+        grid-area: content_txt;
+        text-align: justify;
+
+    }
+    .content_info_link:visited,
+    .content_info_link{
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        font-size: small;
+        color: black;
+        text-decoration: underline;
+    }
+    .content_info--reverse{
+        grid-template-areas: 
+            "content_txt content_img";
+    }
+            .content--about .content_info{
+                margin-top: 50px;
+            }
+    .content_info--services{
+        grid-template-columns: auto auto;
+    }
+        .content_info--services div h3{
+            margin: 0;
+        }
+        .content_info--services .content_info_img{
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+    .contact_address h3{
+        margin: 0;
+    }
+.career{
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .career_form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+        .career_form label{
+            text-align: left;
+            display: block;
+	        margin: 0px 0px 15px 0px;
+        }
+        .career_form label > .span{
+            width: 20%;
+            float: left;
+            padding-top: 8px;
+        }
+        .career_form button{
+            width: 100px;
+        }
+.form_input{
+    width: 80%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+    .form_input--state{
+        width: 15%;
+    }
+    .form_input--zip{
+        width: 20%;
+    }
+    .form_input--experience{
+        height: 60px;
+    }
+
+    @media only screen and (max-width: 1024px){
+        .banner{
+            margin: 10vh 10% 0 10%;
+        }
+        .content{
+            margin: 0 10% 10vh 10%;
+        }
+            .content--about{
+                margin: 10vh 10%
+            }
+            .content--services{
+                margin: 10vh 10%
+            }
+            .content--career{
+                margin: 10vh 10%
+            }
+    }
+
+    @media only screen and (max-width: 768px){
+        .nav_logo{
+            width: 100%;
+        }
+        .navbar_menu{
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            background-color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.5s ease-in;
+            padding-bottom: 10px;
+        }
+            .navbar_menu--active{
+                top: 10vh;
+                transform: translate(-50%, 0%);
+            }
+            .navbar_item{
+                text-align: center;
+                width: 100%;
+                opacity: 0;
+            }
+        .bar{
+            display: none;
+        }
+            @keyframes navItemFade{
+                from{
+                    opacity: 0;
+                    transform: translateY(-10vh);
+                }
+                to{
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+            }
+        .burger{
+            display: block;
+        }
+        .toggle .burger-l1{
+            transform: rotate(-45deg) translate(-6px, 6px);
+        }
+        .toggle .burger-l2{
+            opacity: 0;
+        }
+        .toggle .burger-l3{
+            transform: rotate(45deg) translate(-6px, -6px);
+        }
+        .container{
+            margin: 0 5%;
+        }
+        .banner{
+            margin: 10vh 0 0 0;
+        }
+        .content{
+            margin: 0 5% 5vh 5%;
+        }
+            .content--contact{
+                margin: 10vh 10% 5vh 10%
+            }
+            .content--about{
+                margin: 10vh 10% 5vh 10%
+            }
+            .content--services{
+                margin: 10vh 10% 5vh 10%
+            }
+            .content--career{
+                height: auto;
+                margin: 10vh 10% 5vh 10%
+            }
+        .content_info{
+            grid-template-columns: auto;
+            grid-template-rows: 1fr auto;
+            grid-template-areas: 
+                "content_img"
+                "content_txt";
+            row-gap: 10px;
+        }
+            .content_info--services{
+                grid-template-columns: auto;
+                grid-template-rows: 1fr auto;
+                grid-template-areas: 
+                    "content_img"
+                    "content_txt";
+            }
+            .content_info_txt{
+                margin-right: 0;
+            }
+            .content_info_img{
+                margin-left: auto;
+                margin-right: auto;
+                height: 200px;
+                width: auto;
+            }
+            .content_info_link{
+                right: 0;
+            }
+            .content_info a{
+                text-align: center;
+            }
+        .footer_txt{
+            font-size: x-small;
+        }
+    }
+
+    @media only screen and (max-width: 415px){
+        .nav_logo{
+            width: 90%;
+        }
+        .navbar_logo{
+            width: 100%;
+        }
+        .banner{
+            height: auto;
+        }
+            .banner_img{
+                height: auto;
+            }
+        .content{
+            margin: 0 0 5vh 0;
+        }
+            .content--about{
+                margin: 10vh 0 5vh 0;
+            }
+            .content--services{
+                margin: 10vh 0 5vh 0;
+            }
+            .content--contact{
+                margin: 10vh 0 5vh 0;
+            }
+            .content--career{
+                margin: 10vh 0 5vh 0;
+            }
+            .content_header{
+                height: 30px;
+            }
+            .content_header h1{
+                font-size: 1.3rem;
+                padding: 5px 0;
+            }
+        .container{
+            margin: 0 5%;
+        }
+        .content_info{
+            grid-template-columns: auto;
+            grid-template-rows: 1fr auto;
+            grid-template-areas: 
+                "content_img"
+                "content_txt";
+            font-size: x-small;
+        }
+            .content_info--services{
+                grid-template-columns: auto;
+                grid-template-rows: 1fr auto;
+                grid-template-areas: 
+                    "content_img"
+                    "content_txt";
+            }
+                .content_info--services .content_info_img{
+                }
+            .content_info_img{
+                margin-left: auto;
+                margin-right: auto;
+                height: 200px;
+                width: auto;
+            }
+            .content_info--reverse a{
+                text-align: center;
+            }
+            
+    }
