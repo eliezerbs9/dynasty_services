@@ -114,7 +114,8 @@ body{
     }
     .content--career{
         margin-top: 10vh;
-        height: 85vh;
+        min-height: 85vh;
+        height: auto;
         padding-bottom: 0;
     }
     .content_header{
@@ -328,6 +329,7 @@ body{
                 margin: 10vh 10% 5vh 10%
             }
             .content--career{
+                min-height: 85vh;
                 height: auto;
                 margin: 10vh 10% 5vh 10%
             }
@@ -352,8 +354,7 @@ body{
             .content_info_img{
                 margin-left: auto;
                 margin-right: auto;
-                height: 200px;
-                width: auto;
+                height: auto;
             }
             .content_info_link{
                 right: 0;
@@ -419,13 +420,10 @@ body{
                     "content_img"
                     "content_txt";
             }
-                .content_info--services .content_info_img{
-                }
             .content_info_img{
                 margin-left: auto;
                 margin-right: auto;
-                height: 200px;
-                width: auto;
+                height: auto;
             }
             .content_info--reverse a{
                 text-align: center;
